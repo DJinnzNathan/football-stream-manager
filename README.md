@@ -1,2 +1,2 @@
-# football-stream-manager
+# Football Stream Manager
 Overlays for football streaming
