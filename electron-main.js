@@ -15,7 +15,7 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('./dist/football-stream-manager/index.html')
+  mainWindow.loadFile('./dist/ang-build/index.html')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
