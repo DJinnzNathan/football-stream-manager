@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 :root {
-  --main-background: #100029;
+  --main-color: #100029;
   --light: #ffffff;
 }
 
@@ -12,5 +12,9 @@
 }
 
 html {
-  background-color: var(--main-background);
+  background-color: var(--main-color);
+}
+
+.main-bg {
+    background-color: var(--main-color);
 }
