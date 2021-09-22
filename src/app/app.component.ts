@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'football-stream-manager';
+
+  public closeItUp():void {
+    window.close();
+  }
 }
