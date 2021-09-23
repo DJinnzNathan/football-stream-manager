@@ -1,20 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 :root {
-  --main-color: #100029;
+  --main-color: #400670;
+  --main-bg: #1a0029;
   --light: #ffffff;
 }
 
 * {
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 html {
-  background-color: var(--main-color);
+  background-color: var(--main-bg);
 }
 
 .main-bg {
-    background-color: var(--main-color);
+    background-color: var(--main-bg);
 }
