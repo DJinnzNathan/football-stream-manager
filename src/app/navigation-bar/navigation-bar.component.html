@@ -1,23 +1,26 @@
 <div class="h-100 bg-white p-3 rounded-menu sidebar">
-    <div class="logo text-center mt-3 pb-5">
-        <img src="https://www.asvfuerth.de/wp-content/uploads/2017/05/asv.svg" width="150px" alt="" id="logo-img">
-    </div>
+    <div class="logo text-center mt-3 pb-5" id="logo-img"></div>
     <div class="menu">
-        <div class="menu-point row m-2 py-5">
-            <span class="icon col-auto material-icons">window</span><span class="col text-left">Dashboard</span>
+        <div class="menu-point cursor-pointer row my-5 p-2 highlight">
+            <span class="icon col-auto material-icons">window</span>
+            <span class="col text-left" *ngIf="!isSidebarCollapsed()">Dashboard</span>
         </div>
-        <div class="menu-point row m-2 py-5">
-            <i class="icon col-auto material-icons">description</i><span class="col text-left">Matchboard</span>
+        <div class="menu-point cursor-pointer row my-5 p-2 highlight">
+            <span class="icon col-auto material-icons">description</span>
+            <span class="col text-left" *ngIf="!isSidebarCollapsed()">Matchboard</span>
         </div>
-        <div class="menu-point row m-2 py-5">
-            <span class="icon col-auto material-icons">speaker</span><span class="col text-left">Soundboard</span>
+        <div class="menu-point cursor-pointer row my-5 p-2 highlight">
+            <span class="icon col-auto material-icons">speaker</span>
+            <span class="col text-left" *ngIf="!isSidebarCollapsed()">Soundboard</span>
         </div>
-        <div class="menu-point row m-2 py-5">
-            <span class="icon col-auto material-icons">settings</span><span class="col text-left">Settings</span>
+        <div class="menu-point cursor-pointer row my-5 p-2 highlight">
+            <span class="icon col-auto material-icons">settings</span>
+            <span class="col text-left" *ngIf="!isSidebarCollapsed()">Settings</span>
         </div>
-        <div class="text-center mt-5">
-            <span class="material-icons">arrow_back</span>
-        </div>
+    </div>
+    <div class="menu-arrow text-center cursor-pointer mt-5 mb-4 position-absolute bottom-0 start-50 translate-middle-x">
+        <span class="material-icons" id="arrow" [ngClass]="isSidebarCollapsed()? 'back': ''"
+            (click)="toggleSidebar()">arrow_forward</span>
     </div>
 
 </div>

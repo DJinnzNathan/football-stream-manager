@@ -9,7 +9,17 @@ export class NavigationBarComponent implements OnInit {
 
   constructor() { }
 
+  private isCollapsed: boolean = true;
+
   ngOnInit(): void {
+  }
+
+  public isSidebarCollapsed(): boolean {
+    return this.isCollapsed;
+  }
+
+  public toggleSidebar(): void {
+    this.isCollapsed = !this.isCollapsed;
   }
 
 }

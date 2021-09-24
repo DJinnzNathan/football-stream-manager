@@ -22,3 +22,22 @@ html {
 .main-bg {
     background-color: var(--main-bg);
 }
+
+.user-select-none, .material-icons {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.highlight {
+  // background-color: white;
+}
+
+.highlight:hover {
+  opacity:  0.8;
+  box-shadow: #1a0029;
+}
